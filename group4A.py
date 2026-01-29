@@ -19,53 +19,22 @@ def filled_circle(radius, fill_color, outline_color):
     t.end_fill()
 
 # Draw coin
-filled_circle(120, "#f2a900", "#d18b00")
-filled_circle(105, "#ffd700", "#ffd700")
+filled_circle(120, "grey", "grey")
+filled_circle(105, "white", "white")
 
-t.pensize(12)
+t.pensize(18)
 
-t.color("#8b5a00")
+t.color("green")
 
-t.penup()
-t.goto(20, 45)   # offset to the right & slightly down
-t.pendown()
-
-# Vertical bar
-t.setheading(-90)
-t.forward(100)
-
-# Bottom bar
-t.setheading(0)
-t.forward(45)
-
-# ---- Draw E (FRONT) ----
-t.color("black")
 
 t.penup()
-t.goto(-55, 50)
+t.goto(-50, 0)
 t.pendown()
 
-# Vertical bar
-t.setheading(-90)
-t.forward(100)
-
-# Top bar
-t.penup()
-t.goto(-55, 50)
-t.pendown()
-t.setheading(0)
-t.forward(40)
-
-# Middle bar
-t.penup()
-t.goto(-55, 0)
-t.pendown()
-t.forward(30)
-
-# Bottom bar
-t.penup()
-t.goto(-55, -50)
-t.pendown()
-t.forward(40)
+#Correct Mark
+t.right(45)
+t.forward(60)
+t.left(105)
+t.forward(120)         
 
 turtle.done()
